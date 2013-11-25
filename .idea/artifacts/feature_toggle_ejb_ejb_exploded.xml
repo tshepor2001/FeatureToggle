@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="feature-toggle-ejb:ejb exploded">
+    <output-path>$PROJECT_DIR$/feature-toggle-ejb/target/feature-toggle-ejb-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="feature-toggle-ejb/ejb/EJB" />
+      <element id="module-output" name="feature-toggle-ejb" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FeatureToggle.iml" filepath="$PROJECT_DIR$/FeatureToggle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear.iml" filepath="$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" filepath="$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" />
+    </modules>
+  </component>
+</project>
+

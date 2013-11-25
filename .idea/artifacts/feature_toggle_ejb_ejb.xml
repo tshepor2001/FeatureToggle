@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="feature-toggle-ejb:ejb">
+    <output-path>$PROJECT_DIR$/feature-toggle-ejb/target</output-path>
+    <root id="archive" name="feature-toggle-ejb-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="feature-toggle-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>

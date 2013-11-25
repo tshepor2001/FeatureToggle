@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="feature-toggle-ear:ear">
+    <output-path>$PROJECT_DIR$/feature-toggle-ear/target/ear</output-path>
+    <root id="archive" name="feature-toggle-ear-1.0-SNAPSHOT.ear">
+      <element id="artifact" artifact-name="feature-toggle-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>
