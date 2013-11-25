@@ -1,5 +1,6 @@
 package com.investec.feature.toggle;
 
+import com.test.feature.toggle.*;
 import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;

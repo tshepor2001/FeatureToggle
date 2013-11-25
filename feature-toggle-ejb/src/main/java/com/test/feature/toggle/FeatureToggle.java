@@ -1,14 +1,10 @@
-package com.investec.feature.toggle;
+package com.test.feature.toggle;
 
-import com.investec.feature.toggle.FeatureToggleMBean;
 import org.jboss.annotation.ejb.Management;
 import org.jboss.annotation.ejb.Service;
-import org.xml.sax.SAXException;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
 import java.util.List;
 
 

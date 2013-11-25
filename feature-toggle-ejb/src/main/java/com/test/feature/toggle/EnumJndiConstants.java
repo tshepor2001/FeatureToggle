@@ -1,4 +1,4 @@
-package com.investec.feature.toggle;
+package com.test.feature.toggle;
 
 public enum EnumJndiConstants {
     FEATURE_ROOT_PATH("/config/application/features/");

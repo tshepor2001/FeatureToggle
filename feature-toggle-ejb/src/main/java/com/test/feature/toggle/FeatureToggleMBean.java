@@ -1,4 +1,4 @@
-package com.investec.feature.toggle;
+package com.test.feature.toggle;
 
 /**
  * Created with IntelliJ IDEA.

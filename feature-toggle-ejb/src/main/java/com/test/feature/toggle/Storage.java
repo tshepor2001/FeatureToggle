@@ -1,4 +1,4 @@
-package com.investec.feature.toggle;
+package com.test.feature.toggle;
 
 import java.util.List;
 
