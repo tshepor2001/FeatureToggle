@@ -38,7 +38,7 @@ public class FeatureToggleTest {
     @Test
     public void testStart() throws Exception {
         FeatureToggle toggle = new FeatureToggle();
-        toggle.start();
+//        toggle.start();
 
 
     }
