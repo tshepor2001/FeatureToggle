@@ -80,7 +80,7 @@ public class StorageXMLImpl implements Storage {
     public void addFeature(Feature input) throws TransformerException {
         Node features = document.getFirstChild();
         Element feature = document.createElement("feature");
-
+        feature.setAttribute("id", input.getId());
         Element name = document.createElement("name");
         name.appendChild(document.createTextNode(input.getName()));
         feature.appendChild(name);

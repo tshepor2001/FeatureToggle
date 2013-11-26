@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d948d520-05cb-4367-8769-fcdd701f348e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ear/pom.xml" afterPath="$PROJECT_DIR$/feature-toggle-ear/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/pom.xml" afterPath="$PROJECT_DIR$/feature-toggle-ejb/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureAlreadyExistsException.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-toggle-ear/dist/application.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear-1.0-SNAPSHOT.ear" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear-1.0-SNAPSHOT/META-INF/application.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear-1.0-SNAPSHOT/feature-toggle-ejb-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-toggle-ear/maven-archiver/pom.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FeatureToggle.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385474161019" ignored="false" />
     <file path="$PROJECT_DIR$/feature-toggle-ear/dist/application.xml" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385389032701" ignored="false" />
-    <file path="/FeatureToggle.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385473421332" ignored="false" />
-    <file path="/fragment.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385472747035" ignored="false" />
-    <file path="/FeatureToggleMBean.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385461011698" ignored="false" />
+    <file path="/FeatureToggle.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385479430102" ignored="false" />
+    <file path="/fragment.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385479295363" ignored="false" />
+    <file path="/FeatureToggleMBean.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385477555685" ignored="false" />
     <file path="$USER_HOME$/.m2/settings.xml" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385398389423" ignored="false" />
     <file path="/File Header.txt.ft" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385400406271" ignored="false" />
     <file path="/Catch Statement Body.txt.ft" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385400420394" ignored="false" />
@@ -24,15 +30,17 @@
     <file path="/Feature.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385408096189" ignored="false" />
     <file path="/FeatureManagerImplTest.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385406357696" ignored="false" />
     <file path="/Storage.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385403867092" ignored="false" />
-    <file path="/StorageXMLImpl.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385469610925" ignored="false" />
+    <file path="/StorageXMLImpl.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385475425198" ignored="false" />
     <file path="/features.xml" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385405679564" ignored="false" />
     <file path="/EnumJndiConstants.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385407404631" ignored="false" />
     <file path="/FeatureToggleTest.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385407952010" ignored="false" />
-    <file path="/Dummy.txt" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385474095694" ignored="false" />
+    <file path="/Dummy.txt" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385474368485" ignored="false" />
     <file path="/a.txt" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385420404210" ignored="false" />
     <file path="/FeatureUtil.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385472427669" ignored="false" />
     <file path="/FeatureNotAvailableException.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385464518055" ignored="false" />
     <file path="/EnumStorageConfiguration.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385469262930" ignored="false" />
+    <file path="/persistence.xml" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385474329670" ignored="false" />
+    <file path="/FeatureAlreadyExistsException.java" changelist="d948d520-05cb-4367-8769-fcdd701f348e" time="1385479308054" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,37 +93,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" line="106" class="com.test.feature.toggle.FeatureToggle" package="com.test.feature.toggle">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" line="100" class="com.test.feature.toggle.FeatureToggle" package="com.test.feature.toggle">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" line="56" class="com.test.feature.toggle.FeatureToggle" package="com.test.feature.toggle">
+      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" line="63" class="com.test.feature.toggle.FeatureToggle" package="com.test.feature.toggle">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -140,28 +118,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="315" selection-end="338" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature-toggle-ear/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="60" selection-start="2031" selection-end="2054" vertical-scroll-proportion="-2.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeatureToggle.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FeatureToggle.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="0" selection-start="4715" selection-end="4715" vertical-scroll-proportion="0.0">
+            <state line="63" column="0" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.273743">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureAlreadyExistsException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureAlreadyExistsException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodInvocation.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/jboss/jbossall-client/4.2.2.GA/jbossall-client-4.2.2.GA.jar!/org/jboss/aop/joinpoint/MethodInvocation.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="28" selection-start="1194" selection-end="1194" vertical-scroll-proportion="-3.96">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Feature.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/Feature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,43 +159,25 @@
       <file leaf-file-name="FeatureToggleMBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+            <state line="16" column="35" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeatureManagerImplTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/investec/feature/toggle/FeatureManagerImplTest.java">
+      <file leaf-file-name="FeatureStorageManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="7" column="16" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/pom.xml">
+      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="433" selection-end="433" vertical-scroll-proportion="-1.4545455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeatureUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/main/java/com/test/feature/toggle/FeatureUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feature-toggle-client/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="315" selection-end="338" vertical-scroll-proportion="0.3180212">
+            <state line="4" column="45" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,7 +186,7 @@
       <file leaf-file-name="StorageXMLImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="0" selection-start="3857" selection-end="3857" vertical-scroll-proportion="0.0">
+            <state line="80" column="0" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-2.7692308">
               <folding />
             </state>
           </provider>
@@ -224,8 +195,19 @@
       <file leaf-file-name="EnumStorageConfiguration.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="3" column="61" selection-start="99" selection-end="134" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureStorageManagerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -251,22 +233,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/investec/feature/toggle/FeatureToggle.java" />
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/investec/feature/toggle/StorageXMLImpl.java" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumJndiConstants.java" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/META-INF/ejb-jar.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureNotAvailableException.java" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManagerImpl.java" />
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageConfiguration.java" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureUtil.java" />
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/investec/feature/toggle/FeatureManagerImplTest.java" />
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java" />
-        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/pom.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-ear/pom.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-client/pom.xml" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageConfiguration.java" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureAlreadyExistsException.java" />
+        <option value="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java" />
       </list>
     </option>
   </component>
@@ -317,6 +299,24 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="feature-toggle-ear" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="feature-toggle-ear" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -464,7 +464,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="feature-toggle-ear" />
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +482,129 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="feature-toggle-client" />
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-toggle-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeatureToggle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-toggle-ear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,7 +625,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="/usr/local/Cellar/git/1.8.4.3/bin/git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feature-toggle-ear/target/ear/feature-toggle-ear-1.0-SNAPSHOT.ear" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -513,11 +639,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.investec.feature.toggle" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.test.feature.toggle" />
@@ -783,11 +909,14 @@
       <method />
     </configuration>
     <configuration default="false" name="JBoss 4.2.3.GA" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 4.2.3.GA">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/feature_toggle_client_war_exploded" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfeature.toggle.xml.storage.location=&quot;/usr/local/application/feature-toggle/features.xml&quot;" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="feature-toggle-client:war exploded">
+        <file path="$PROJECT_DIR$/feature-toggle-ear/target/ear/feature-toggle-ear-1.0-SNAPSHOT.ear">
           <settings />
-        </artifact>
+        </file>
       </deployment>
       <server-settings>
         <option name="SERVER" value="default" />
@@ -797,10 +926,60 @@
       </server-settings>
       <predefined_log_file id="JBoss" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54742" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="feature-toggle-client:war exploded" />
-        </option>
+        <option name="Make" enabled="false" />
       </method>
     </configuration>
     <list size="5">
@@ -860,7 +1039,15 @@
       <created>1385474104701</created>
       <updated>1385474104701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed group id">
+      <created>1385474285476</created>
+      <updated>1385474285476</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed group id">
+      <created>1385474379894</created>
+      <updated>1385474379894</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -880,13 +1067,13 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20340356" sideWeight="0.67094016" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20340356" sideWeight="0.2948718" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43589744" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.68091166" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6701031" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="LiquibaseModel" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3298217" sideWeight="0.6701031" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7065527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41737893" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -946,7 +1133,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added read and updates from xml storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed group id" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -962,6 +1149,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="base" />
     <MESSAGE value="added read and updates from xml storage" />
+    <MESSAGE value="changed group id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -971,88 +1159,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/main/java/com/test/feature/toggle/FeatureNotAvailableException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/Storage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/Feature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/investec/feature/toggle/FeatureToggleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/main/java/com/test/feature/toggle/FeatureUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/investec/feature/toggle/FeatureManagerImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="19" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="3857" selection-end="3857" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="4715" selection-end="4715" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1073,15 +1182,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature-toggle-ear/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="60" selection-start="2031" selection-end="2054" vertical-scroll-proportion="-2.8">
+        <state line="53" column="60" selection-start="2031" selection-end="2054" vertical-scroll-proportion="1.5454545">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature-toggle-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="315" selection-end="338" vertical-scroll-proportion="0.3180212">
+        <state line="6" column="36" selection-start="315" selection-end="338" vertical-scroll-proportion="1.5454545">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/main/java/com/test/feature/toggle/FeatureUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="45" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="61" selection-start="99" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/Feature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureStorageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/StorageXMLImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-2.7692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggleMBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="35" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jboss/jbossall-client/4.2.2.GA/jbossall-client-4.2.2.GA.jar!/org/jboss/aop/joinpoint/MethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="28" selection-start="1194" selection-end="1194" vertical-scroll-proportion="-3.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureAlreadyExistsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/FeatureToggle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.273743">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

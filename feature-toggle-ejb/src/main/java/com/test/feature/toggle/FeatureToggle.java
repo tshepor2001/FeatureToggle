@@ -35,19 +35,23 @@ public class FeatureToggle implements FeatureToggleMBean {
             Properties props = (Properties) ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
             Boolean featureValue = (Boolean) props.get(featureName);
             if (featureValue == null) {
-                throw new NameNotFoundException();
+                throw new FeatureNotAvailableException("feature does not exist");
             }
             props.put(featureName, false);
             unbind();
             bind(props);
+            FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
+            storageManager.updateFeature(new Feature("99", featureName, false));
         } catch (NameNotFoundException e) {
+            System.out.println("   Service is currently not active");
+            System.out.println("  ");
+
+        } catch (FeatureNotAvailableException e) {
             System.out.println("   feature: " + featureName + " does not exist, available features are:");
             System.out.println("  ");
         }
 
         printFeatures();
-        FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
-        storageManager.updateFeature(new Feature("99", featureName, false));
 
 
     }
@@ -61,20 +65,22 @@ public class FeatureToggle implements FeatureToggleMBean {
             props = (Properties) ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
             Boolean featureValue = (Boolean) props.get(featureName);
             if (featureValue != null) {
-                throw new NameNotFoundException();
+                throw new FeatureAlreadyExistsException("Feature already exists");
             }
             props.put(featureName, active);
             unbind();
             bind(props);
-        } catch (NameNotFoundException e) {
+            FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
+            storageManager.addFeature(new Feature(String.valueOf(props == null ? 0 : props.size()), featureName, active));
+        } catch (FeatureAlreadyExistsException e) {
             System.out.println("   feature: " + featureName + " already exist, available features are:");
             System.out.println("  ");
 
+        } catch (NameNotFoundException e) {
+            System.out.println("   Service is currently not active");
+            System.out.println("  ");
+
         }
-
-
-        FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
-        storageManager.addFeature(new Feature(String.valueOf(props == null ? 0 : props.size() + 1), featureName, active));
         printFeatures();
     }
 
@@ -86,25 +92,29 @@ public class FeatureToggle implements FeatureToggleMBean {
             Properties props = (Properties) ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
             Boolean featureValue = (Boolean) props.get(featureName);
             if (featureValue == null) {
-                throw new NameNotFoundException();
+                throw new FeatureNotAvailableException("feature does not exist");
             }
             props.put(featureName, true);
             unbind();
             bind(props);
-        } catch (NameNotFoundException e) {
+            FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
+            storageManager.updateFeature(new Feature("99", featureName, true));
+        } catch (FeatureNotAvailableException e) {
             System.out.println("   feature: " + featureName + " does not exist, available features are:");
+            System.out.println("  ");
+
+        } catch (NameNotFoundException e) {
+            System.out.println("   service is currently not active");
             System.out.println("\n  ");
         }
 
         printFeatures();
-        FeatureStorageManager storageManager = new FeatureStorageManagerImpl(new StorageXMLImpl());
-        storageManager.updateFeature(new Feature("99", featureName, true));
-
     }
 
     @Override
     public void start() throws Exception {
         printStart("start");
+        unbind();
         bindFeatures();
         printEnd();
 
@@ -122,16 +132,28 @@ public class FeatureToggle implements FeatureToggleMBean {
     @Override
     public void printFeatures() throws Exception {
         printStart("print available features");
-        InitialContext ctx = new InitialContext();
-        Properties props = (Properties) ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+        try {
+            InitialContext ctx = new InitialContext();
+            Properties props = (Properties) ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
 
-        for (Map.Entry<Object, Object> prop : props.entrySet()) {
+            for (Map.Entry<Object, Object> prop : props.entrySet()) {
 
-            System.out.println("    feature: " + prop.getKey());
-            System.out.println("    -- active: " + prop.getValue());
-            System.out.println("\n");
+                System.out.println("    feature: " + prop.getKey());
+                System.out.println("      - active: " + prop.getValue());
+                System.out.println("\n");
 
+            }
+        } catch (NameNotFoundException e) {
+            System.out.println("    all features are unbound.");
         }
+
+        printEnd();
+    }
+
+    @Override
+    public void stopAllFeatures() throws Exception {
+        printStart("stop");
+        unbind();
         printEnd();
     }
 
@@ -142,8 +164,8 @@ public class FeatureToggle implements FeatureToggleMBean {
         System.out.println("   binding properties to: " + EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
         for (Feature feature : features) {
             System.out.println("    feature: " + feature.getName());
-            System.out.println("    -- id: " + feature.getId());
-            System.out.println("    -- active: " + feature.isActive());
+            System.out.println("      - id: " + feature.getId());
+            System.out.println("      - active: " + feature.isActive());
             System.out.println("\n");
             props.put(feature.getName(), feature.isActive());
         }
@@ -160,10 +182,17 @@ public class FeatureToggle implements FeatureToggleMBean {
 
     private void unbind() throws NamingException {
         InitialContext ctx = new InitialContext();
-        ctx.unbind(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+        try {
+            Object obj = ctx.lookup(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+            ctx.unbind(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+            NonSerializableFactory.unbind(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+            System.out.println("   ubound all features from: " + EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
 
-        NonSerializableFactory.unbind(EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
-        System.out.println("   ubound all features from: " + EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+
+        } catch (NameNotFoundException e) {
+            System.out.println("   there are no features bound to: " + EnumJndiConstants.FEATURE_ROOT_PATH.getValue());
+        }
+
 
     }
 }

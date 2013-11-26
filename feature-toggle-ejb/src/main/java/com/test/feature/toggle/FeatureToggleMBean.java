@@ -13,4 +13,6 @@ public interface FeatureToggleMBean {
 
     public void printFeatures() throws Exception;
 
+    public void stopAllFeatures() throws Exception;
+
 }
