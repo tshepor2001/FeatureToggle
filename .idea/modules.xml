@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FeatureToggle.iml" filepath="$PROJECT_DIR$/FeatureToggle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-toggle-client/feature-toggle-client.iml" filepath="$PROJECT_DIR$/feature-toggle-client/feature-toggle-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear.iml" filepath="$PROJECT_DIR$/feature-toggle-ear/feature-toggle-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" filepath="$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" />
     </modules>

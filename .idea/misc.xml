@@ -399,6 +399,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-ear/pom.xml" />
         <option value="$PROJECT_DIR$/feature-toggle-ejb/pom.xml" />
+        <option value="$PROJECT_DIR$/feature-toggle-client/pom.xml" />
       </list>
     </option>
   </component>

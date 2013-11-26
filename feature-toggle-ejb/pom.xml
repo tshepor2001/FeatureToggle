@@ -11,6 +11,12 @@
     <packaging>ejb</packaging>
     <dependencies>
         <dependency>
+            <groupId>com.investec.test</groupId>
+            <version>1.0-SNAPSHOT</version>
+            <artifactId>feature-toggle-client</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.4</version>
@@ -18,6 +24,11 @@
         <dependency>
             <groupId>jboss</groupId>
             <artifactId>jboss-annotations-ejb3</artifactId>
+            <version>4.2.2.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>jboss</groupId>
+            <artifactId>jbossall-client</artifactId>
             <version>4.2.2.GA</version>
         </dependency>
         <dependency>

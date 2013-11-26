@@ -31,6 +31,8 @@
     <orderEntry type="module" module-name="feature-toggle-ejb" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: junit:junit:4.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jboss:jboss-annotations-ejb3:4.2.2.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: jboss:jbossall-client:4.2.2.GA" level="project" />
+    <orderEntry type="module" module-name="feature-toggle-client" scope="PROVIDED" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
