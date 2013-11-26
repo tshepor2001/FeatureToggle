@@ -3,6 +3,9 @@
     <output-path>$PROJECT_DIR$/feature-toggle-ear/target/ear/feature-toggle-ear-1.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="feature-toggle-ear/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+      </element>
     </root>
   </artifact>
 </component>
