@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.investec.test</groupId>
+    <groupId>com.test.feature.toggle</groupId>
     <artifactId>feature-toggle-ear</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>ear</packaging>
     <dependencies>
         <dependency>
-            <groupId>com.investec.test</groupId>
+            <groupId>com.test.feature.toggle</groupId>
             <version>1.0-SNAPSHOT</version>
             <artifactId>feature-toggle-ejb</artifactId>
             <type>ejb</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.investec.test</groupId>
+            <groupId>com.test.feature.toggle</groupId>
             <version>1.0-SNAPSHOT</version>
             <artifactId>feature-toggle-client</artifactId>
             <type>jar</type>
@@ -47,11 +47,11 @@
                     <defaultLibBundleDir>/lib</defaultLibBundleDir>
                     <modules>
                         <ejbModule>
-                            <groupId>com.investec.test</groupId>
+                            <groupId>com.test.feature.toggle</groupId>
                             <artifactId>feature-toggle-ejb</artifactId>
                         </ejbModule>
                         <jarModule>
-                            <groupId>com.investec.test</groupId>
+                            <groupId>com.test.feature.toggle</groupId>
                             <artifactId>feature-toggle-client</artifactId>
                         </jarModule>
                     </modules>
