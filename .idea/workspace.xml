@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d948d520-05cb-4367-8769-fcdd701f348e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureStorageFactoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageHandler.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/EnumStorageHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureToggleTest.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureToggleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/XMLStorage.java" afterPath="$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/XMLStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-client/feature-toggle-client.iml" afterPath="$PROJECT_DIR$/feature-toggle-client/feature-toggle-client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" afterPath="$PROJECT_DIR$/feature-toggle-ejb/feature-toggle-ejb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-toggle-client/pom.xml" afterPath="$PROJECT_DIR$/feature-toggle-client/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FeatureToggle.iws" />
@@ -89,7 +80,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="17" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
+      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="16" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -104,7 +95,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="55" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
+      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="54" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -119,7 +110,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="50" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
+      <breakpoint url="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java" line="49" class="com.test.feature.toggle.FeatureUtilTest" package="com.test.feature.toggle">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -162,7 +153,7 @@
       <file leaf-file-name="FeatureToggleTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureToggleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-2.3181818" vertical-offset="753" max-vertical-offset="2235">
+            <state line="57" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-0.0" vertical-offset="855" max-vertical-offset="2235">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,10 +184,10 @@
       <file leaf-file-name="XMLStorage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/main/java/com/test/feature/toggle/XMLStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="2535">
+            <state line="51" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2535">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2969#2978#0" expanded="true" />
+                <element signature="e#2970#2979#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,7 +205,7 @@
       <file leaf-file-name="FeatureStorageFactoryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureStorageFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="7" column="6" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="375">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,7 +234,7 @@
       <file leaf-file-name="FeatureUtilTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="26" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1080">
+            <state line="45" column="26" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1080">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1405,7 +1396,7 @@
       <created>1385386196065</created>
       <updated>1385386196065</updated>
       <workItem from="1385494812100" duration="1081000" />
-      <workItem from="1385495923477" duration="29964000" />
+      <workItem from="1385495923477" duration="30006000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1385409512196</created>
@@ -1443,11 +1434,15 @@
       <created>1385555321847</created>
       <updated>1385555321847</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added tests&#10;">
+      <created>1385561665464</created>
+      <updated>1385561665464</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31045000" />
+    <option name="totallyTimeSpent" value="31087000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1575,7 +1570,8 @@
     <MESSAGE value="fixed bugs" />
     <MESSAGE value="fixed bugs&#10;" />
     <MESSAGE value="added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
+    <MESSAGE value="added tests&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1789,7 +1785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature-toggle-client/src/test/java/com/test/feature/toggle/FeatureUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="26" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1080">
+        <state line="45" column="26" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1080">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1852,14 +1848,14 @@
         <state line="51" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="2535">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2969#2978#0" expanded="true" />
+            <element signature="e#2970#2979#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature-toggle-ejb/src/test/java/com/test/feature/toggle/FeatureToggleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-2.3181818" vertical-offset="753" max-vertical-offset="2235">
+        <state line="57" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-0.0" vertical-offset="855" max-vertical-offset="2235">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
