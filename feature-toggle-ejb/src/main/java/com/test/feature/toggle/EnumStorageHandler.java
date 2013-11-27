@@ -1,7 +1,7 @@
 package com.test.feature.toggle;
 
 public enum EnumStorageHandler {
-    XML_FILE(XMLStorage.class);
+    XML_FILE(XMLStorage.class), DATABASE(Class.class);
 
     private Class clazz;
 

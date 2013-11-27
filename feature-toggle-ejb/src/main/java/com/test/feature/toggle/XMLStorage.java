@@ -21,32 +21,55 @@ import java.util.List;
 
 public class XMLStorage implements Storage {
 
-    private final Document document;
+    private Document document;
     private String filePath;
 
     public XMLStorage() throws IOException, SAXException, ParserConfigurationException, TransformerException {
-        this.filePath = System.getProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue());
-        if (filePath == null) {
-            filePath = EnumStorageConfiguration.DEFAULT_STORAGE_LOCATION.getValue();
-            if (!fileExists()) {
-                createFile();
-            }
-        }
-        this.document = loadDocument();
+        initialiseDocument();
 
     }
 
-    private void createFile() throws ParserConfigurationException, TransformerException {
+    private void initialiseDocument() throws ParserConfigurationException, TransformerException, SAXException, IOException {
+        this.filePath = System.getProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue());
+        if (filePath == null) {
+            filePath = EnumStorageConfiguration.DEFAULT_STORAGE_LOCATION.getValue();
+        }
+        if (!fileExists()) {
+            createFile();
+        }
+
+        document = loadDocument();
+    }
+
+    private void createFile() throws ParserConfigurationException, TransformerException, IOException {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
         Document doc = docBuilder.newDocument();
-        Element rootElement = doc.createElement("features");
-        doc.appendChild(rootElement);
+        Element features = doc.createElement("features");
+        doc.appendChild(features);
+
+        Element feature = doc.createElement("feature");
+        feature.setAttribute("id", "1");
+        Element name = doc.createElement("name");
+        name.appendChild(doc.createTextNode("default"));
+        feature.appendChild(name);
+        Element active = doc.createElement("active");
+        active.appendChild(doc.createTextNode(String.valueOf(false)));
+        feature.appendChild(active);
+        features.appendChild(feature);
+
+
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(doc);
-        StreamResult result = new StreamResult(new File(filePath));
+        File file = new File(filePath);
+        File parent = file.getParentFile();
+        if (!parent.exists()) {
+            parent.mkdirs();
+        }
+        file.createNewFile();
+        StreamResult result = new StreamResult(file);
 
         transformer.transform(source, result);
     }

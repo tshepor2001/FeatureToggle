@@ -1,14 +1,13 @@
 package com.test.feature.toggle;
 
 import org.jboss.naming.NonSerializableFactory;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
 
 public class FeatureToggleTest {
@@ -17,6 +16,8 @@ public class FeatureToggleTest {
 
         System.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.apache.naming.java.javaURLContextFactory");
         System.setProperty(Context.URL_PKG_PREFIXES, "org.apache.naming");
+        System.setProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue(), "/usr/local/application/feature-toggle/test/features.xml");
+
     }
 
     @Before
@@ -118,4 +119,25 @@ public class FeatureToggleTest {
         }
 
     }
+
+    @AfterClass
+    public static void cleanUp() throws Exception {
+        String filePath = System.getProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue());
+        delete(new File(filePath));
+
+    }
+
+    private static void delete(File file) throws IOException {
+
+        if (file.isDirectory()) {
+            if (file.list().length == 0) {
+                file.delete();
+            }
+
+        } else {
+            file.delete();
+            delete(file.getParentFile());
+        }
+    }
+
 }
