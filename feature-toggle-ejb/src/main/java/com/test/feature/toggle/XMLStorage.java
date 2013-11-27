@@ -24,10 +24,35 @@ public class XMLStorage implements Storage {
     private final Document document;
     private String filePath;
 
-    public XMLStorage() throws IOException, SAXException, ParserConfigurationException {
+    public XMLStorage() throws IOException, SAXException, ParserConfigurationException, TransformerException {
         this.filePath = System.getProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue());
+        if (filePath == null) {
+            filePath = EnumStorageConfiguration.DEFAULT_STORAGE_LOCATION.getValue();
+            if (!fileExists()) {
+                createFile();
+            }
+        }
         this.document = loadDocument();
 
+    }
+
+    private void createFile() throws ParserConfigurationException, TransformerException {
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+
+        Document doc = docBuilder.newDocument();
+        Element rootElement = doc.createElement("features");
+        doc.appendChild(rootElement);
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        DOMSource source = new DOMSource(doc);
+        StreamResult result = new StreamResult(new File(filePath));
+
+        transformer.transform(source, result);
+    }
+
+    private boolean fileExists() {
+        return new File(filePath).exists();
     }
 
     @Override

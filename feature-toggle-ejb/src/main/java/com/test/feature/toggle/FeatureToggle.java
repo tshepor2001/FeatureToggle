@@ -22,6 +22,8 @@ public class FeatureToggle implements FeatureToggleMBean {
         unbind();
         bindFeatures();
         printFeatures();
+        printEnd();
+
     }
 
     @Override
