@@ -7,6 +7,7 @@ import org.jboss.naming.NonSerializableFactory;
 import javax.naming.InitialContext;
 import javax.naming.NameNotFoundException;
 import javax.naming.NamingException;
+import java.sql.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -15,6 +16,7 @@ import java.util.Properties;
 @Service(name = "FeatureToggle")
 @Management(FeatureToggleMBean.class)
 public class FeatureToggle implements FeatureToggleMBean {
+    Connection conn;
 
     @Override
     public void reloadFeaturesFromStorage() throws Exception {
@@ -165,6 +167,12 @@ public class FeatureToggle implements FeatureToggleMBean {
         printEnd();
     }
 
+    @Override
+    public void runSelectStatement() throws Exception {
+        connect();
+        select();
+    }
+
     private void bindFeatures() throws Exception {
         List<Feature> features = FeatureStorageFactory.createStorage(EnumStorageHandler.XML_FILE).retrieveFeatures();
         Properties props = new Properties();
@@ -197,5 +205,45 @@ public class FeatureToggle implements FeatureToggleMBean {
         }
 
 
+    }
+
+    public boolean connect() {
+        boolean success = true;
+
+        String driverName = "com.mysql.jdbc.Driver";
+        String conURL = "jdbc:mysql://localhost:3306/test";
+        String user = "root";
+        String pass = "";
+
+        try {
+            Class.forName(driverName).newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            System.err.println(e.getMessage() + "------Cannot Load Driver");
+            success = false;
+        }
+
+        try {
+            conn = DriverManager.getConnection(conURL, user, pass);
+        } catch (SQLException e) {
+            System.err.println(e.getMessage() + "--SQL States: " + e.getSQLState() + "---- ErrorCode: " + e.getErrorCode());
+            success = false;
+        }
+        return success;
+    }
+
+    public void select() {
+        try {
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT * FROM feature_toggle");
+            while (rs.next()) {
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

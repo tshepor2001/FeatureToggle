@@ -15,4 +15,6 @@ public interface FeatureToggleMBean {
 
     public void stopAllFeatures() throws Exception;
 
+    public void runSelectStatement() throws Exception;
+
 }

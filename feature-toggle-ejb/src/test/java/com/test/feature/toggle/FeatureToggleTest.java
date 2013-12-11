@@ -120,6 +120,12 @@ public class FeatureToggleTest {
 
     }
 
+    @Test
+    public void should_run_select() throws Exception {
+        FeatureToggle toggle = new FeatureToggle();
+        toggle.runSelectStatement();
+    }
+
     @AfterClass
     public static void cleanUp() throws Exception {
         String filePath = System.getProperty(EnumStorageConfiguration.XML_STORAGE_LOCATION.getValue());
